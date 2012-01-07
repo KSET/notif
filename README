@@ -1,0 +1,22 @@
+Tiny mail notifier.
+
+Author: Ivan Strazicic
+
+Add a .credentials file to your home with the content:
+
+username
+password
+
+
+Be sure to do:
+
+chown 600 ~/.credentials
+
+
+start the program:
+
+python notif.py &
+
+
+
+And wait for the poput message to show you how many unread mail messages you have in your inbox.
