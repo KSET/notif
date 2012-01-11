@@ -1,5 +1,6 @@
 Tiny mail notifier,
-	fork by:spoljo
+
+Original author: Ivan Strazicic
 
 
 usage: notif.py [-h] [-u USR] [-p PAS] [-s SER] [-t TMT]
