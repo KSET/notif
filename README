@@ -1,2 +1,15 @@
 Tiny mail notifier,
 	fork by:spoljo
+
+
+usage: notif.py [-h] [-u USR] [-p PAS] [-s SER] [-t TMT]
+
+py-notify mail checker
+
+optional arguments:
+-h, --help  show this help message and exit
+-u USR      username@host
+-p PAS      email password
+-s SER      email server
+-t TMT      check timeout
+
