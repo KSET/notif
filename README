@@ -1,22 +1,15 @@
-Tiny mail notifier.
-
-Author: Ivan Strazicic
-
-Add a .credentials file to your home with the content:
-
-username
-password
+Tiny mail notifier,
+	fork by:spoljo
 
 
-Be sure to do:
+usage: notif.py [-h] [-u USR] [-p PAS] [-s SER] [-t TMT]
 
-chown 600 ~/.credentials
+py-notify mail checker
 
+optional arguments:
+-h, --help  show this help message and exit
+-u USR      username@host
+-p PAS      email password
+-s SER      email server
+-t TMT      check timeout
 
-start the program:
-
-python notif.py &
-
-
-
-And wait for the poput message to show you how many unread mail messages you have in your inbox.
