@@ -3,8 +3,6 @@
 import time,imaplib,os,argparse
 from sys import exit
 import pynotify as pyn
-
-
 def notif_gen(n):
 	return pyn.Notification("You have mail.","New messages:"+str(n))
 
@@ -45,7 +43,7 @@ if __name__ == "__main__" :
 	notif_gen(tmp).show()
 	while True:
 		a = checkmail(c[0],c[1],c[2])
-		if a > tmp:
+		if a != tmp:
 			tmp=a
 			notif_gen(tmp).show()
 		else:
