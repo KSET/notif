@@ -68,13 +68,11 @@ if __name__ == "__main__" :
 	pyn.init("mail checker")
 	c = credinals()
 	tmp = checkmail(c[0],c[1],c[2])
-	#notif_gen(tmp).show()
-	print tmp
+	notif_gen(tmp).show()
 	while True:
 		a = checkmail(c[0],c[1],c[2])
 		if a != tmp:
 			tmp=a
-			#notif_gen(tmp).show()
-			print tmp 
+			notif_gen(tmp).show()
 		else:
 			time.sleep(c[3])
