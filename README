@@ -1,6 +1,7 @@
 Tiny mail notifier,
 	Original author: Ivan Strazicic
-	fork by:spoljo
+
+The script generates config after first run with command line arguments.
 
 
 usage: notif.py [-h] [-u USR] [-p PAS] [-s SER] [-t TMT]
