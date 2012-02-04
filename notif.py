@@ -46,7 +46,7 @@ def credinals():
 		try:
 			open(os.getenv("HOME")+"/.notif.conf","r").close() #hack da provjeri jel ima config da ne generira novi. 
 																				#ak vam se da mjenjajte al mislim da nema razloga da ovoo ne ostane
-		except:
+		except IOError:
 			conf_gen=open(os.getenv("HOME")+"/.notif.conf","w")
 			conf_gen.writelines([i+"\n" for i in (c.ser,c.usr,c.pas) ])
 			conf_gen.close()
